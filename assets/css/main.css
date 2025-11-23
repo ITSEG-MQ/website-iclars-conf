@@ -121,3 +121,74 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
 }
+
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;  /* 控制按钮之间间距 */
+  margin: 25px 0;
+}
+
+.nav-bar a {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #b8860b;
+}
+
+.nav-bar a:hover {
+  color: #333;
+}
+
+/* Banner image container */
+.banner {
+  width: 100%;
+  height: 350px; /*你可以调成300、400、450，看你喜欢*/
+  background-image: url('/assets/images/banner.png'); /*改成你的图片路径*/
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Title text overlay */
+.banner-title {
+  position: absolute;
+  top: 50%;              /* 垂直居中 */
+  left: 50%;             /* 水平居中 */
+  transform: translate(-50%, -50%);
+  color: #b2132e;
+  font-size: 36px;       /* 🎯你想调大小就在这里调，比如 28 / 32 / 40 / 48 px */
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px #00000050; /* 柔和阴影，让字更清晰 */
+  padding: 0 20px;       /* 防止太长时挤边 */
+}
+
+/* Banner image container */
+.banner {
+  width: 100%;
+  height: 330px; /* ★调大一点空间让文字不挤 */
+  background-image: url('/assets/images/banner.png'); /* 你的 banner 路径 */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Title overlay */
+.banner-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;              /* ★改成白色字体 */
+  font-size: 36px;           /* ★字体大小（你可以调成 32/40/48） */
+  line-height: 1.2;          /* ★避免两行之间太挤 */
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.5); /* ★让白字清晰可读 */
+  padding: 0 20px;           /* 防止长文本贴边 */
+  max-width: 90%;            /* 避免过长时溢出图像 */
+}
