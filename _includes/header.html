@@ -11,6 +11,11 @@
     About Us
   </a>
 
+  <a href="{{ '/organization/' | relative_url }}"
+     class="{% if page.nav == 'organization' %}current{% endif %}">
+    Organization
+  </a>
+
   <a href="{{ '/dates/' | relative_url }}"
      class="{% if page.nav == 'dates' %}current{% endif %}">
     Dates
@@ -24,10 +29,5 @@
   <a href="{{ '/guides/' | relative_url }}"
      class="{% if page.nav == 'guides' %}current{% endif %}">
     Guides
-  </a>
-
-  <a href="{{ '/organization/' | relative_url }}"
-     class="{% if page.nav == 'organization' %}current{% endif %}">
-    Organization
   </a>
 </nav>
