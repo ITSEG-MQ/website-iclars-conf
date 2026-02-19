@@ -5,29 +5,42 @@
   </div>
 </div>
 
-<nav class="nav-bar">
-  <a href="{{ '/' | relative_url }}"
-     class="{% if page.nav == 'home' %}current{% endif %}">
-    About Us
-  </a>
 
-  <a href="{{ '/organization/' | relative_url }}"
-     class="{% if page.nav == 'organization' %}current{% endif %}">
-    Organization
-  </a>
-
-  <a href="{{ '/dates/' | relative_url }}"
-     class="{% if page.nav == 'dates' %}current{% endif %}">
-    Dates
-  </a>
-
-  <a href="{{ '/calls/' | relative_url }}"
-     class="{% if page.nav == 'calls' %}current{% endif %}">
-    Calls
-  </a>
-
-  <a href="{{ '/guides/' | relative_url }}"
-     class="{% if page.nav == 'guides' %}current{% endif %}">
-    Guides
-  </a>
-</nav>
+<table class="navigation">
+  <tr>
+    <td class="navigation">
+      <a href="{{ '/' | relative_url }}" class="{% if page.nav == 'home' %}current{% endif %}">
+        About Us
+      </a>
+    </td>
+    <td class="navigation">
+      <a href="{{ '/organization/' | relative_url }}" class="{% if page.nav == 'organization' %}current{% endif %}">
+        Organization
+      </a>
+    </td>
+    <td class="navigation">
+      <a href="{{ '/dates/' | relative_url }}" class="{% if page.nav == 'dates' %}current{% endif %}">
+        Dates
+      </a>
+    </td>
+    <td class="navigation">
+      <a href="{{ '/calls/' | relative_url }}" class="{% if page.nav == 'calls' %}current{% endif %}">
+        Calls
+      </a>
+    </td>
+    <td class="navigation">
+      <a href="{{ '/guides/' | relative_url }}" class="{% if page.nav == 'guides' %}current{% endif %}">
+        Guides
+      </a>
+    </td>
+    <td class="navigation dropdown">
+      <a href="{{ '/archive/' | relative_url }}" class="{% if page.nav == 'archive' %}current{% endif %}">
+        Past Events
+      </a>
+      <div class="dropdown-content">
+        <a href="{{ '/archive/2025-jul/' | relative_url }}">TACPS 2025 Jul</a>
+        <a href="{{ '/archive/2024-oct/' | relative_url }}">TACPS 2024 Oct</a>
+        <a href="{{ '/archive/2024-jan/' | relative_url }}">TACPS 2024 Jan</a>
+      </div>
+  </tr>
+</table>
