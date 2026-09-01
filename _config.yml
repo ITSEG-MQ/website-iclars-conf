@@ -4,5 +4,9 @@ url: "https://itseg-mq.github.io" # GH Pages root
 baseurl: "/website-iclars-conf"   # repo name
 environment: "staging"            # env name
 exclude:
+  - LICENSE
+  - README.md
   - editor-handbook.md
   - maintainer-handbook.md
+  - scripts
+  - tests
